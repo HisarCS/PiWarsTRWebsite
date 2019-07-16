@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Event HTML Template</title>
+	<title>PiWars TR</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -24,6 +24,36 @@
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
+	<script type="text/javascript">
+			function countDown() {
+				var today = new Date();
+				var eventDate = new Date("March 23,2020 08:40:00");
+
+				var currentTime = today.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTime;
+
+				var sec = Math.floor(remTime / 1000);
+				var min = Math.floor(sec / 60);
+				var hrs = Math.floor(min / 60);
+				var days = Math.floor(hrs / 24);
+
+				hrs = hrs % 24;
+				min %= 60;
+				sec %= 60;
+				hrs = (hrs < 10) ? "0" + hrs : hrs;
+				min = (min < 10) ? "0" + min : min;
+				sec = (sec < 10) ? "0" + sec : sec;
+				document.getElementById("days").innerHTML = days;
+				document.getElementById("hrs").innerHTML = hrs;
+				document.getElementById("mins").innerHTML = min;
+				document.getElementById("secs").innerHTML = sec;
+
+				setTimeout(countDown, 1000);
+			}
+		</script>
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -31,7 +61,7 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 </head>
-<body>
+<body onload="countDown()">
 
 	<!-- Header -->
 	<header id="header" class="transparent-navbar">
@@ -60,6 +90,7 @@
 			<nav id="nav">
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
+					<li><a href="#challenges">Challenges</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#schedule">Schedule</a></li>
 					<li><a href="#speakers">Speakers</a></li>
@@ -89,8 +120,7 @@
 					<!-- home content -->
 					<div class="col-md-8 col-md-offset-2">
 						<div class="home-content">
-							<h1>Pi Wars Turkey 2020</h1>
-							<!--<h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>-->
+							<h1 style="font-size: 75px">PiWars Turkey <br \>2020</h1>
 							<a href="#" class="main-btn">Apply</a>
 						</div>
 					</div>
@@ -101,6 +131,32 @@
 			<!-- /container -->
 		</div>
 		<!-- /home wrapper -->
+	</div>
+	<div class="countdown" style="background: #dd0a37">
+		<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- home content -->
+					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+						<h1 id="days" class="timer">0</h1>
+						<h2 style="text-align: center;margin-bottom: 40px;">days</h2>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+						<h1 id="hrs" class="timer">00</h1>
+						<h2 style="text-align: center;margin-bottom: 40px;">hours</h2>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+						<h1 id="mins" class="timer">00</h1>
+						<h2 style="text-align: center;margin-bottom: 40px;">minutes</h2>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+						<h1 id="secs" class="timer">00</h1>
+						<h2 style="text-align: center;margin-bottom: 40px;">seconds</h2>
+					</div>
+					<!-- /home content -->
+				</div>
+				<!-- /row -->
+			</div>
 	</div>
 	<!-- /Home -->
 
@@ -113,41 +169,96 @@
 				</div>
 			</div>
 			<div id="challenges">
-				<div class="row">
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="row" style="margin-bottom: 75px;margin-top: 35px;">
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=16">
 								<div class="circle_btn">
-									<h3 class="name">Balloon</h3>
+									<h3 class="name">Pi Noon</h3>
 									<img src="img/ch1.png" class="icon">
 								</div>
-							</div>
-							<!-- /number -->
+							</a>
+						</div>
+						<!-- /challenge -->
 
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=9">
 								<div class="circle_btn">
-									<h3 class="name">Robot</h3>
+									<h3 class="name">Proximity Alert</h3>
 									<img src="img/ch2.png" class="icon">
 								</div>
-							</div>
-							<!-- /number -->
+							</a>
+						</div>
+						<!-- /challenge -->
 
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=7">
 								<div class="circle_btn">
-									<h3 class="name">Gear</h3>
+									<h3 class="name">Maze</h3>
 									<img src="img/ch3.png" class="icon">
 								</div>
-							</div>
-							<!-- /number -->
+							</a>
+						</div>
+						<!-- /challenge -->
 
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=19">
 								<div class="circle_btn">
-									<h3 class="name">Obstacle</h3>
+									<h3 class="name">Obstacle Course</h3>
 									<img src="img/ch4.png" class="icon">
 								</div>
-							</div>
+							</a>
+						</div>
+						<!-- /challenge -->
+					</div>
+
+					<div class="row" style="margin-bottom: 40px;margin-top: 40px;">
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=16">
+								<div class="circle_btn">
+									<h3 class="name">Pi Noon</h3>
+									<img src="img/ch1.png" class="icon">
+								</div>
+							</a>
+						</div>
+						<!-- /challenge -->
+
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=9">
+								<div class="circle_btn">
+									<h3 class="name">Proximity Alert</h3>
+									<img src="img/ch2.png" class="icon">
+								</div>
+							</a>
+						</div>
+						<!-- /challenge -->
+
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=7">
+								<div class="circle_btn">
+									<h3 class="name">Maze</h3>
+									<img src="img/ch3.png" class="icon">
+								</div>
+							</a>
+						</div>
+						<!-- /challenge -->
+
+						<!-- challenge -->
+						<div class="col-md-3 col-sm-3 col-xs-6">
+							<a href="https://piwars.hisarcs.com/assets/img/manual.pdf#page=19">
+								<div class="circle_btn">
+									<h3 class="name">Obstacle Course</h3>
+									<img src="img/ch4.png" class="icon">
+								</div>
+							</a>
+						</div>
+						<!-- /challenge -->
 					</div>
 				</div>
 			</div>
@@ -175,7 +286,7 @@
 					<!-- Numbers -->
 					<div id="numbers">
 						<div class="row">
-							<h1>From 2018:</h1>
+							<h1>From 2019:</h1>
 						</div>
 						<!-- row -->
 						<div class="row">
@@ -651,9 +762,9 @@
 				<!-- cta content -->
 				<div class="col-md-8 col-md-offset-2">
 					<div class="cta-content text-center">
-						<h2>Get Ticket Now!</h2>
+						<h2>Apply Now!</h2>
 						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="#" class="main-btn">Buy Ticket</a>
+						<a href="#" class="main-btn">Apply</a>
 					</div>
 				</div>
 				<!-- /cta content -->

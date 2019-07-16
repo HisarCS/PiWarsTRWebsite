@@ -353,7 +353,7 @@ textarea.input {
 ===========================================================*/
 
 #home {
-  height: 100vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -384,6 +384,18 @@ textarea.input {
 
 .page-wrapper-content {
   text-align: center;
+}
+
+.countdown {
+  height: 20vh;
+  position:relative;
+  background: #dd0a37;
+}
+
+.countdown .timer {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /*=========================================================
@@ -1081,34 +1093,35 @@ textarea.input {
 }
 
 .circle_btn{
-  padding-left: 62px;
-  padding-top: 80px;
+  margin: auto;
   width: 200px;
   height: 200px;
   /*border: 15px solid #dd0a37;*/
   background: #dd0a37;
   border-radius: 50%;
   behavior: url(PIE.htc);
-  transition: background 0.7s ease-in-out;
+  transition: background 0.4s ease-in-out;
 }
 .circle_btn .icon{
-  height: 50
-  width: 50;
-  display: inline;
   position: absolute;
-  left: 80px;
-  top: 55px;
+  max-height:50%;
+  min-height:40%;
+  width:auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   opacity: 100;
-  transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 .circle_btn:hover .icon{
   opacity: 0;
 }
 .circle_btn .name{
   position: absolute;
-  display: inline;
-  left: 80px;
-  top: 55px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.7s ease-in-out;
 }
