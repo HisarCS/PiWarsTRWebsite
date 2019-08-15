@@ -56,6 +56,16 @@
 			window.onbeforeunload = function () {
   			window.scrollTo(0, 0);
 			}
+
+			function initMap() {
+  				// The location of Uluru
+  				var uluru = {lat: -25.344, lng: 131.036};
+  				// The map, centered at Uluru
+  				var map = new google.maps.Map(
+      			document.getElementById('map'), {zoom: 4, center: uluru});
+  				// The marker, positioned at Uluru
+  				var marker = new google.maps.Marker({position: uluru, map: map});
+			}
 		</script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -1041,7 +1051,11 @@
 		<!-- /container -->
 
 		<!-- Map -->
-		<div id="map"></div>
+		<div id="map">
+			<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoBInp9DkF2UN6rpDqx_aid5ZQ5_GcAE8&callback=initMap">
+    		</script>
+		</div>
 		<!-- /Map -->
 	</div>
 	<!-- /Contact -->
