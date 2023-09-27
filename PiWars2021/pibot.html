@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html>
+
+
+ <head>
+
+
+ <meta charset="utf-8">
+
+
+ <title>PiBot</title>
+
+
+ <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+ <meta content="" name="keywords">
+
+
+ <meta content="" name="description">
+
+
+ <link href="img/beyaz.png" rel="icon">
+
+
+
+
+
+
+
+ <!-- Favicons -->
+
+
+ <link href="img/favicon.png" rel="icon">
+
+
+ <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+
+
+
+
+
+ <!-- Google Fonts -->
+
+
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+
+
+
+
+
+
+ <!-- Bootstrap CSS File -->
+
+
+ <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+ <!-- Libraries CSS Files -->
+
+
+ <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+ <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+
+ <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+
+ <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+ <!-- Main Stylesheet File -->
+
+
+ <link href="css/style.css" rel="stylesheet">
+
+
+
+
+
+
+
+ <!-- =======================================================
+   Theme Name: TheEvent
+   Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+   Author: BootstrapMade.com
+   License: https://bootstrapmade.com/license/
+ ======================================================= -->
+
+
+</head>
+
+
+ <body>
+
+
+
+
+
+
+
+ <header id="header">
+
+
+   <div class="container">
+
+
+
+
+
+
+
+     <div id="logo" class="pull-left">
+
+
+       <!-- Uncomment below if you prefer to use a text logo -->
+
+
+       <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+
+
+       <a href="#intro"><img src="img/logoarkali.png" style="width: 210px; height: 250px" alt="" title=""></a>
+
+
+     </div>
+
+
+
+
+
+
+
+     <nav id="nav-menu-continer">
+
+
+       <ul class="nav-menu">
+
+
+         <li ><a href="index.html">Anasayfa</a></li>
+
+
+         <li><a href="bizkimiz.html">Biz Kimiz?</a></li>
+
+
+         <li><a href="robotyapimi.html">Robot Yapımı</a></li>
+
+
+          <li><a href="duyurular.html">Duyurular</a></li>
+
+
+
+
+
+
+
+         <li><a href="gecmisseneler.html">Geçmiş Seneler</a></li>
+
+
+                   <li class="menu-active"><a href="pibot.html">PiBot</a></li>
+
+
+
+
+
+
+
+         <li><a href="#contact">İletişim</a></li>
+
+
+         <li class="buy-tickets"><a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform" target="blank">Başvur</a></li>
+
+
+       </ul>
+
+
+     </nav><!-- #nav-menu-container -->
+
+
+   </div>
+
+
+ </header><!-- #header -->
+
+
+ <br>  <br>
+
+
+ <br>
+
+
+ <br>
+
+
+   <br><br>
+
+
+<div id='bodybox'>
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id='chatborder'>
+
+
+   <i>Merhaba! Ben PiBot, sorularınızı cevaplamak için buradayım .)</i>
+
+
+   <p id="chatlog7" class="chatlog">&nbsp;</p>
+
+
+   <p id="chatlog6" class="chatlog">&nbsp;</p>
+
+
+   <p id="chatlog5" class="chatlog">&nbsp;</p>
+
+
+   <p id="chatlog4" class="chatlog">&nbsp;</p>
+
+
+   <p id="chatlog3" class="chatlog">&nbsp;</p>
+
+
+   <p id="chatlog2" class="chatlog">&nbsp;</p>
+
+
+   <p id="chatlog1" class="chatlog">&nbsp;</p>
+
+
+
+
+
+
+
+   <input type="text" name="chat" id="chatbox" placeholder="Sorunu buraya yazabilirsin.)" onfocus="placeHolder()">
+
+
+ </div>
+
+
+
+
+
+
+
+</div>
+
+
+<style>
+
+
+body {
+
+
+ font: 15px arial, sans-serif;
+
+
+ background-color: #312b4d;
+
+
+ padding-top: 15px;
+
+
+ padding-bottom: 15px;
+
+
+}
+
+
+
+
+
+
+
+#bodybox {
+
+
+ margin: auto;
+
+
+ max-width: 550px;
+
+
+ font: 15px arial, sans-serif;
+
+
+ background-color: #bf0429;
+
+
+ border-style: solid;
+
+
+ border-width: 1px;
+
+
+ padding-top: 20px;
+
+
+ padding-bottom: 25px;
+
+
+ padding-right: 25px;
+
+
+ padding-left: 25px;
+
+
+ box-shadow: 5px 5px 5px grey;
+
+
+ border-radius: 15px;
+
+
+}
+
+
+
+
+
+
+
+#chatborder {
+
+
+ border-style: solid;
+
+
+ background-color: #f6f9f6;
+
+
+ border-width: 3px;
+
+
+ margin-top: 20px;
+
+
+ margin-bottom: 20px;
+
+
+ margin-left: 20px;
+
+
+ margin-right: 20px;
+
+
+ padding-top: 10px;
+
+
+ padding-bottom: 15px;
+
+
+ padding-right: 20px;
+
+
+ padding-left: 15px;
+
+
+ border-radius: 15px;
+
+
+}
+
+
+
+
+
+
+
+.chatlog {
+
+
+  font: 15px arial, sans-serif;
+
+
+}
+
+
+
+
+
+
+
+#chatbox {
+
+
+ font: 17px arial, sans-serif;
+
+
+ height: 22px;
+
+
+ width: 100%;
+
+
+}
+
+
+
+
+
+
+
+h1 {
+
+
+ margin: auto;
+
+
+}
+
+
+
+
+
+
+
+pre {
+
+
+ background-color: #f0f0f0;
+
+
+ margin-left: 20px;
+
+
+}
+
+
+
+
+
+
+
+</style>
+
+
+<script>
+
+
+var messages = [],
+
+
+ lastUserMessage1 = "",
+
+
+   lastUserMessage = "",
+
+
+
+
+
+
+
+ discord = 'discord',
+
+ şartname = 'şartname',
+
+ botMessage = "",
+
+
+ botName = 'PiBot',
+
+
+ talking = false;
+
+
+function chatbotResponse() {
+
+
+ talking = false;
+
+
+ var yok = "yok";
+
+
+   var hayır = "hayır";
+
+
+   var teşekkürler = "teşekkürler";
+
+
+
+
+
+
+
+var discord = lastUserMessage.includes("discord");
+
+var şartname = lastUserMessage.includes("şartname");
+
+var udemy = lastUserMessage.includes("udemy");
+
+
+var eğitim = lastUserMessage.includes("eğitim");
+
+
+
+
+
+
+
+botMessage = "Sorunu anlayamadım. hisarcs@hisarschool.k12.tr'ye sorunu iletebilirsin."; //the default message
+
+
+
+
+
+
+
+
+
+
+
+
+ if (lastUserMessage === 'merhaba' || lastUserMessage =='selam' || lastUserMessage =='hey') {
+
+
+   const selam = ['merhaba! ben PiBot. sana yardım etmek için buradayım.','selam! ben PiBot. sana yardım etmek için buradayım.']
+
+
+   botMessage = selam[Math.floor(Math.random()*(selam.length))];;
+
+
+ }
+
+
+
+
+
+
+
+ if (discord)
+
+
+
+
+
+
+
+{
+
+
+   botMessage = 'Discord sunucusuna katılım linki katılımcılara gönderilmiştir. Discord sunucusu ile takımlar arasındaki etkileşimi sağlamayı hedefliyoruz. Eğer Pi Wars yarışmasına başvurmuş ancak Discord linki size ulaşmadıysa lütfen hisarcs@hisarschool.k12.tr adresine mail atın. Umarım sorunuzu cevplayabilmişimdir. Bakşa bir sorunuz var mı?';
+
+
+ }
+
+
+ if (şartname)
+
+
+
+
+
+
+
+{
+
+
+   botMessage = 'Pi Wars TR 2021 Şartnamesine anasayfadan ulaşabilirsin.';
+
+
+ 
+
+
+     
+
+
+
+
+
+
+
+ } 
+
+
+
+ if (udemy || eğitim)
+
+
+
+
+
+
+
+{
+
+
+   botMessage = 'Udemy kursumuz yayınlanmıştır. HisarCS Udemy hesabından veya anasayfadan kursa ulaşabilirsiniz. Başka yardım edebileceğim bir konu var mı?';
+
+
+ 
+
+
+     
+
+
+
+
+
+
+
+ } 
+
+
+ if (  lastUserMessage.includes(yok)
+
+
+||  lastUserMessage.includes(hayır) ||  lastUserMessage.includes(teşekkürler))
+
+
+
+
+
+
+
+{
+
+
+botMessage = "Görüşmek üzere! Beni unutma .)"  
+
+
+     
+
+
+
+
+
+
+
+ }
+
+
+}
+
+
+//****************************************************************
+
+
+//****************************************************************
+
+
+//****************************************************************
+
+
+//****************************************************************
+
+
+//****************************************************************
+
+
+//****************************************************************
+
+
+//****************************************************************
+
+
+//
+
+
+//
+
+
+//
+
+
+//this runs each time enter is pressed.
+
+
+//It controls the overall input and output
+
+
+function newEntry() {
+
+
+ //if the message from the user isn't empty then run
+
+
+ if (document.getElementById("chatbox").value != "") {
+
+
+   //pulls the value from the chatbox ands sets it to lastUserMessage
+
+
+   lastUserMessage = (document.getElementById("chatbox").value).toLowerCase();
+
+
+
+
+
+
+
+   //sets the chat box to be clear
+
+
+   document.getElementById("chatbox").value = "";
+
+
+   //adds the value of the chatbox to the array messages
+
+
+   messages.push(lastUserMessage.toLowerCase());
+
+
+   //Speech(lastUserMessage);  //says what the user typed outloud
+
+
+   //sets the variable botMessage in response to lastUserMessage
+
+
+   chatbotResponse();
+
+
+   //add the chatbot's name and message to the array messages
+
+
+   messages.push("<b>" + botName + ":</b> " + botMessage);
+
+
+   // says the message using the text to speech function written below
+
+
+   //outputs the last few array elements of messages to html
+
+
+   for (var i = 1; i < 8; i++) {
+
+
+     if (messages[messages.length - i])
+
+
+       document.getElementById("chatlog" + i).innerHTML = messages[messages.length - i];
+
+
+   }
+
+
+ }
+
+
+}
+
+
+
+
+
+
+
+//runs the keypress() function when a key is pressed
+
+
+document.onkeypress = keyPress;
+
+
+//if the key pressed is 'enter' runs the function newEntry()
+
+
+function keyPress(e) {
+
+
+ var x = e || window.event;
+
+
+ var key = (x.keyCode || x.which);
+
+
+ if (key == 13 || key == 3) {
+
+
+   //runs this function when enter is pressed
+
+
+   newEntry();
+
+
+ }
+
+
+ if (key == 38) {
+
+
+   console.log('hi')
+
+
+     //document.getElementById("chatbox").value = lastUserMessage;
+
+
+ }
+
+
+}
+
+
+
+
+
+
+
+//clears the placeholder text ion the chatbox
+
+
+//this function is set to run when the users brings focus to the chatbox, by clicking on it
+
+
+function placeHolder() {
+
+
+document.getElementById("chatbox").placeholder = "";
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
