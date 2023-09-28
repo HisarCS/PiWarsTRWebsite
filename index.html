@@ -1,477 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Pi Wars'24</title>
+    <title>Pi Wars TR'24</title>
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
-	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-	<!-- Owl Carousel -->
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
 
-	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-	<script type="text/javascript">
-			function countDown() {
-				var today = new Date();
-				var eventDate = new Date("April 10,2021 08:30:00");
+    <script type="text/javascript">
+        function countDown() {
+            var today = new Date();
+            var eventDate = new Date("February 10,2024 08:30:00");
 
-				var currentTime = today.getTime();
-				var eventTime = eventDate.getTime();
+            var currentTime = today.getTime();
+            var eventTime = eventDate.getTime();
 
-				var remTime = eventTime - currentTime;
+            var remTime = eventTime - currentTime;
 
-				var sec = Math.floor(remTime / 1000);
-				var min = Math.floor(sec / 60);
-				var hrs = Math.floor(min / 60);
-				var days = Math.floor(hrs / 24);
+            var sec = Math.floor(remTime / 1000);
+            var min = Math.floor(sec / 60);
+            var hrs = Math.floor(min / 60);
+            var days = Math.floor(hrs / 24);
 
-				hrs = hrs % 24;
-				min %= 60;
-				sec %= 60;
-				hrs = (hrs < 10) ? "0" + hrs : hrs;
-				min = (min < 10) ? "0" + min : min;
-				sec = (sec < 10) ? "0" + sec : sec;
-				document.getElementById("days").innerHTML = days;
-				document.getElementById("hrs").innerHTML = hrs;
-				document.getElementById("mins").innerHTML = min;
-				document.getElementById("secs").innerHTML = sec;
+            hrs = hrs % 24;
+            min %= 60;
+            sec %= 60;
+            hrs = (hrs < 10) ? "0" + hrs : hrs;
+            min = (min < 10) ? "0" + min : min;
+            sec = (sec < 10) ? "0" + sec : sec;
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hrs").innerHTML = hrs;
+            document.getElementById("mins").innerHTML = min;
+            document.getElementById("secs").innerHTML = sec;
 
-				setTimeout(countDown, 3000);
-			}
+            setTimeout(countDown, 3000);
+        }
 
-			window.onbeforeunload = function () {
-  			window.scrollTo(0, 0);
-			}
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        }
 
-			function initMap() {
-  				// The location of Uluru
-  				var uluru = {lat: -25.344, lng: 131.036};
-  				// The map, centered at Uluru
-  				var map = new google.maps.Map(
-      			document.getElementById('map'), {zoom: 4, center: uluru});
-  				// The marker, positioned at Uluru
-  				var marker = new google.maps.Marker({position: uluru, map: map});
-			}
-		</script>
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
 			  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 </head>
+
 <body onload="countDown()">
 
-	<!-- Header -->
-	<header id="header" class="transparent-navbar">
-		<!-- container -->
-		<div class="container">
-			<!-- navbar header -->
-			<div class="navbar-header">
-				<!-- Logo -->
-				<div class="navbar-brand">
-					<a class="logo" href="index.html">
-						<img class="logo-img" src="./img/Pi Wars Logo - Turkey.png" alt="logo">
-						<img class="logo-alt-img" src="./img/Pi Wars Logo - Turkey.png" alt="logo">
-					</a>
-				</div>
-				<!-- /Logo -->
+    <!-- Header -->
+    <header id="header" class="transparent-navbar">
+        <!-- container -->
+        <div class="container">
+            <!-- navbar header -->
+            <div class="navbar-header">
+                <!-- Logo -->
+                <div class="navbar-brand">
+                    <a class="logo" href="index.html">
+                        <img class="logo-img" src="./img/Pi Wars Logo - Turkey.png" alt="logo">
+                        <img class="logo-alt-img" src="./img/Pi Wars Logo - Turkey.png" alt="logo">
+                    </a>
+                </div>
+                <!-- /Logo -->
 
-				<!-- Mobile toggle -->
-				<button class="navbar-toggle">
-						<i class="fa fa-bars"></i>
-					</button>
-				<!-- /Mobile toggle -->
-			</div>
-			<!-- /navbar header -->
+                <!-- Mobile toggle -->
+                <button class="navbar-toggle">
+					<i class="fa fa-bars"></i>
+				</button>
+                <!-- /Mobile toggle -->
+            </div>
+            <!-- /navbar header -->
 
-			<!-- Navigation -->
-			<input type="image" src="img/engFlag.jpg" name="eng" width="24" height="18" onclick="window.location='index2.html';">
-			<input type="image" src="img/trFlag.jpg" name="tr" width="24" height="18" onclick="window.location='index.html';">
-			<nav id="nav">
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="index.html">Pi Wars TR' 21</a></li>
-<!-- 					<li><a href="#about">Yarışma Hakkında</a></li>
- -->					<li><a href="bizkimiz.html">Bİz Kİmİz?</a></li>
-  					<li><a href="robotyapımı.html">Robot Yapımı</a></li> 
-	  	  			<li><a href="discord.html">Discord</a></li>
+            <!-- Navigation -->
+            <input type="image" src="img/engFlag.jpg" name="eng" width="24" height="18" onclick="window.location='index2.html';">
+            <input type="image" src="img/trFlag.jpg" name="tr" width="24" height="18" onclick="window.location='index.html';">
+            <nav id="nav">
+                <ul class="main-nav nav navbar-nav navbar-right">
+                    <li><a href="index.html">Pi Wars TR'24</a></li>
+                    <!-- 					<li><a href="#about">Yarışma Hakkında</a></li>
+ -->
+                    <li><a href="bizkimiz.html">Bİz Kİmİz?</a></li>
+                    <li><a href="robotyapımı.html">Robot Yapımı</a></li>
+                    <li><a href="discord.html">Discord</a></li>
 
-						<ul class="dropdown">
-    					<li><a class="dropdown"class="main-nav nav navbar-nav navbar-right"> Geçmİş Seneler </a></li>
-   							<ul class="dropdown-content">
-     						   <li> <a href="piwars20.html">Pi Wars TR'20</a></li>
-        						<li> <a href="piwars19.html">Pi Wars TR'19</a></li>
-   							</ul>
- 						</ul>
-	  	  			<li><a href="#contact">İletİşİm</a></li>
-
-
-
- 					
- 		
-
-  					
-
- 					
- 		
-
-</ul>
-
-			</nav>
-			<!-- /Navigation -->
-		</div>
-		<!-- /container -->
-	</header>
-	<!-- /Header -->
-
-	<!-- Home -->
-	<div id="home">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/grup.png)" data-stellar-background-ratio="0.5"></div>
-		<!-- /background image -->
-
-		<!-- home wrapper -->
-		<div class="home-wrapper">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- home content -->
-					<div class="col-md-8 col-md-offset-2">
-						<div class="home-content">
-							<h1 style="font-size: 75px">Pi Wars Türkiye Online <br \>2021</h1>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform?usp=sf_link" class="main-btn">Başvuru Formu</a>
-						</div>
-					</div>
-					<!-- /home content -->
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /home wrapper -->
-	</div>
-	<div class="countdown" style="background: #dd0a37">
-		<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- home content -->
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="days" class="timer">0</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">gün</h2>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="hrs" class="timer">00</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">saat</h2>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="mins" class="timer">00</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">dakika</h2>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="secs" class="timer">00</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">saniye</h2>
-					</div>
-					<!-- /home content -->
-				</div>
-				<!-- /row -->
-			</div>
-	</div>
-	<!-- /Home -->
-
-	<!-- About -->
-	<div id="about" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<p>Etkinlik için başvurular 7 Aralık 09:00'da açılacak, 31 Ocak 23:59'da kapanacaktır.</p>
-					<br>
-					<h3 class="title"><span>Pi Wars TR</span> <span style="color: #dd0a37;">Yarışma</span></h3>
-					<h3>10 Nisan</h3>
-				</div>
-				<!-- /section title -->
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<!-- about content -->
-					<div class="about-content">
-						<p>Pi Wars son 6 senedir İngiltere Cambridge Üniversitesinde gerçekleşen bir robotik yarışmasıdır. Yarışmada takımlar Raspberry Pi tabanlı mobil robotlarını çeşitli otonom ve uzaktan kumandalı görevlerde yarıştırır, her görevi tamamlama hızına ve başarı oranına bakılarak puanlandırılırlar. 
-						<br>
-						<br>
-						Bu sene üçüncüsü gerçekleşecek Pi Wars etkinliği ile ülkemizde takımlar arası rekabeti ortandan kaldıran, robotiğe yeni başlayanları teşvik eden, ve katılımcılardaki "maker" ruhunu canlandıran bir yarışma kültürü oluşturmayı hedefliyoruz. Bu sene, pandemi dolayısıyla Pi Wars Türkiye sanal ortamdan yapılacaktır. Detaylı bilgilere <a href = "#challenges"><u> şartname </u></a> kısmından
-						</b> ulaşabilirsiniz.</p>
-						<!-- <p>Yarışmaya 24 takım seçilecektir.</p> -->
-						<p>Etkinliğe katılım ücretsizdir.</p>
-					</div>
-					<!-- /about content -->
-				</div>
-			</div>
-
-			<div class="row">
-				<br>
-				<div class="section-title">
-					<h3 class="title"><span>Pi Wars TR</span> <span style="color: #dd0a37;">Eğitim</span></h3>
-					<h3>Ocak Ayı</h3>
-				</div>
-				<!-- /section title -->
-
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<!-- about content -->
-					<div class="about-content">
-						<p>Türkiye'de robotiği daha erişilebilir kılma misyonumuzu sadece bir yarışmayla gerçekleştiremeyeceğimizin farkındayız. Bu sebeple, 2 senedir yarışma öncesi verilen Pi Wars TR Eğitimi'ni bu sene de devam ettiriyoruz!
-						<br>
-						<br> Yarışmaya katılan tüm takımlar, 1 Ocak'tan itibaren HisarCS tarafından hazırlanan "Sıfırdan Raspberry Pi Tabanlı Robot Yapımı: Pi Wars Türkiye" adlı online eğitim videoları ile yarışmaya hazırlanabilecekler. Bu videolarda Python, Raspberry Pi, 3D tasarım ve bilgisayar görüsü konularına değinilecek ve eğitimin sonunda her takım öğrendiklerini kullanarak kendi basit RasPi robotunu yapacak.<br>
-						<br> Ocak ayı boyunca takımlar Pi Wars TR mentorlarıyla bir araya gelebilecek ve sorularını sorabilecekler. Takımlar yarışmaya kadar olan süreçte Discord kanalımızdan diğer takımlar ile iletişim halinde olup birbirlerine yardım edebilecekler. <br>
-						 <br> Seçilen 10 takıma kendi robotlarını geliştirebilmeleri için gerekli malzemeleri içeren robot kitleri sağlanacaktır. Diğer takımlar yakın zamanda açıklanacak olan malzeme listesini kullanarak gerekli parçaları satın alabilirler.
- </p>
-					</div>
-					<!-- /about content -->
-
-					<!-- Numbers -->
-			
-								<!-- Numbers -->
-					<div id="numbers">
-						<div class="row">
-							<h1>2020'den:</h1>
-						</div>
-						<!-- row -->
-						<div class="row">
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="20" data-speed="2700">0</span></h3>
-									<p>Okul</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="225" data-speed="2700">0</span>+</h3>
-									<p>Katılımcı</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="15" data-speed="2700">0</span></h3>
-									<p>Robot Kİti</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="96" data-speed="2700">0</span>%</h3>
-									<p>Memnuniyet</p>
-								</div>
-							</div>
-							<!-- /number -->
-						</div>
-						<!-- /row -->
-								<div id="numbers">
-						<div class="row">
-							<h1>2019'dan:</h1>
-						</div>
-						<!-- row -->
-						<div class="row">
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="18" data-speed="2700">0</span></h3>
-									<p>Okul</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="80" data-speed="2700">0</span>+</h3>
-									<p>Katılımcı</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="18" data-speed="2700">0</span></h3>
-									<p>Robot Kİti</p>
-								</div>
-							</div>
-							<!-- /number -->
-
-							<!-- number -->
-							<div class="col-md-3 col-sm-3 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="93" data-speed="2700">0</span>%</h3>
-									<p>Memnuniyet</p>
-								</div>
-							</div>
-							<!-- /number -->
-						</div>
-					</div>
-
-				</div>
-
-				<!-- /Numbers -->
-
-			</div>
-
-		</div>
-
-		<!-- /container -->
-
-	</div>
+                    <ul class="dropdown">
+                        <li><a class="dropdown" class="main-nav nav navbar-nav navbar-right"> Geçmİş Seneler </a></li>
+                        <ul class="dropdown-content">
+                            <li> <a href="./PiWars2021/index.html">Pi Wars TR'21</a></li>
+                            <li> <a href="piwars20.html">Pi Wars TR'20</a></li>
+                            <li> <a href="piwars19.html">Pi Wars TR'19</a></li>
+                        </ul>
+                    </ul>
+                    <li><a href="#contact">İletİşİm</a></li>
 
 
-	<!-- /About -->
-
-		<!-- Galery -->
-	<div id="galery">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- galery owl -->
-				<div id="galery-owl" class="owl-carousel owl-theme">
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img2.JPG" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img1.JPG" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img3.jpg" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img4.jpg" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img5.JPG" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img6.JPG" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/IMG_0418.JPG" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img8.JPG" alt="">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="./img/img9.jpeg" alt="">
-					</div>
-					<!-- /galery item -->
-<div class="galery-item">
-						<img src="./img/IMG_2462.jpg" alt="">
-					</div>
-					<div class="galery-item">
-						<img src="./img/imgqq.png" alt="">
-					</div>
-				
-				</div>
-				<!-- /galery owl -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Galery -->
-<br>
-	<!-- Video CTA -->
-	<div id="video-cta" class="section">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/video1.png)"></div>
-		<!-- /background image -->
-
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- cta content -->
-				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<a class="video-play" href="https://www.youtube.com/watch?v=tWIej24A-fE">
-							<i class="fa fa-play"></i>
-						</a>
-						<h2 style="color: #000000"><mark style="background-color:#ffffff">2020 Yarışma Videosu</mark></h2>
-						<!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-					</div>
-				</div>
-				<!-- /cta content -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-			</div>
-	
-</a>
-</div></div>
 
 
-	<!--Challenges-->
-	<div id="challenges" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="section-title">
-					<h3 class="title" style="margin-bottom: 5px;"><span>Yarışma</span> <span style="color: #dd0a37;">Şartnamesi</span></h3>
-					<br>
-					<a href="https://docs.google.com/document/d/1hsHqVAiVwvYBoUvGmPTJjqWT2iBiAOetJmHjBB0PY7Y/edit?usp=sharing" class="main-btn">Yarışma Şartnamesi</a>
-				
-	<!--Ödüller-->
-	<div id="oduller" class="section">
-					<h3 class="title" style="margin-bottom: 5px;">Ödüller<span></span> <span style="color: #dd0a37;"></span></h3>
-					<br>
-<!-- 					<h1 style="color: #dd0a37;">1'incilik Ödülü</h1> -->
-					<h4>Ödüller en kısa zamanda açıklanacaktır.</h4>
-					<!-- <h4>Pololu Balboa 32U4 Dengede Duran Robot Kiti</h4>
+
+
+
+
+
+
+
+                </ul>
+
+            </nav>
+            <!-- /Navigation -->
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /Header -->
+
+    <!-- Home -->
+    <div id="home">
+        <!-- background image -->
+        <div class="section-bg" style="background-image:url(./img/grup.png)" data-stellar-background-ratio="0.5"></div>
+        <!-- /background image -->
+
+        <!-- home wrapper -->
+        <div class="home-wrapper">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- home content -->
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="home-content">
+                            <h1 style="font-size: 75px">Pi Wars Türkiye <br \>2023-2024</h1>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform?usp=sf_link" class="main-btn">Başvuru Formu</a>
+                        </div>
+                    </div>
+                    <!-- /home content -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /home wrapper -->
+    </div>
+    <div class="countdown" style="background: #dd0a37">
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- home content -->
+                <div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+                    <h1 id="days" class="timer">0</h1>
+                    <h2 style="text-align: center;margin-bottom: 40px;">gün</h2>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+                    <h1 id="hrs" class="timer">00</h1>
+                    <h2 style="text-align: center;margin-bottom: 40px;">saat</h2>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+                    <h1 id="mins" class="timer">00</h1>
+                    <h2 style="text-align: center;margin-bottom: 40px;">dakika</h2>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+                    <h1 id="secs" class="timer">00</h1>
+                    <h2 style="text-align: center;margin-bottom: 40px;">saniye</h2>
+                </div>
+                <!-- /home content -->
+            </div>
+            <!-- /row -->
+        </div>
+    </div>
+    <!-- /Home -->
+
+    <!-- About -->
+    <div id="about" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- section title -->
+                <div class="section-title">
+                    <p>Etkinlik için başvurular yakında açıklanacak.</p>
+                    <br>
+                    <h3 class="title"><span>Pi Wars TR</span> <span style="color: #dd0a37;">Yarışma</span></h3>
+                    <h3>10 Şubat</h3>
+                </div>
+                <!-- /section title -->
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <!-- about content -->
+                    <div class="about-content">
+                        <p>Pi Wars son 9 senedir İngiltere Cambridge Üniversitesinde gerçekleşen bir robotik yarışmasıdır. Yarışmada takımlar Raspberry Pi tabanlı mobil robotlarını çeşitli otonom ve uzaktan kumandalı görevlerde yarıştırır, her görevi tamamlama
+                            hızına ve başarı oranına bakılarak puanlandırılırlar.
+                            <br>
+                            <br> Bu sene dördüncüsü gerçekleşecek Pi Wars etkinliği ile ülkemizde takımlar arası rekabeti ortandan kaldıran, robotiğe yeni başlayanları teşvik eden, ve katılımcılardaki "maker" ruhunu canlandıran bir yarışma kültürü oluşturmayı
+                            hedefliyoruz. Bu sene, Pi Wars Türkiye etkinliğimiz yüz yüze ortamdan yapılacaktır. Detaylı bilgilere <a href="#challenges"><u> şartname </u></a> kısmından
+                            </b> ulaşabilirsiniz.
+                        </p>
+                        <!-- <p>Yarışmaya 24 takım seçilecektir.</p> -->
+                        <p>Etkinliğe katılım ücretsizdir.</p>
+                    </div>
+                    <!-- /about content -->
+                </div>
+            </div>
+
+            <div class="row">
+                <br>
+                <div class="section-title">
+                    <h3 class="title"><span>Pi Wars TR</span> <span style="color: #dd0a37;">Eğitim</span></h3>
+                    <h3>Kasım Ayı</h3>
+                </div>
+                <!-- /section title -->
+
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <!-- about content -->
+                    <div class="about-content">
+                        <p>Türkiye'de robotiği daha erişilebilir kılma misyonumuzu sadece bir yarışmayla gerçekleştiremeyeceğimizin farkındayız. Bu sebeple, 4 senedir yarışma öncesi verilen Pi Wars TR Eğitimi'ni bu sene de devam ettiriyoruz!
+                            <br>
+                            <br> Yarışmaya katılan tüm takımlar, 1 Ocak'tan itibaren HisarCS tarafından hazırlanan "Sıfırdan Raspberry Pi Tabanlı Robot Yapımı: Pi Wars Türkiye" adlı online eğitim videoları ile yarışmaya hazırlanabilecekler. Bu videolarda
+                            Python, Raspberry Pi, 3D tasarım ve bilgisayar görüsü konularına değinilecek ve eğitimin sonunda her takım öğrendiklerini kullanarak kendi basit RasPi robotunu yapacak.<br>
+                            <br> Kasım ayı boyunca takımlar Pi Wars TR mentorlarıyla bir araya gelebilecek ve sorularını sorabilecekler. Takımlar yarışmaya kadar olan süreçte Discord kanalımızdan diğer takımlar ile iletişim halinde olup birbirlerine yardım
+                            edebilecekler. <br>
+                            <br> Seçilen 10 takıma kendi robotlarını geliştirebilmeleri için gerekli malzemeleri içeren robot kitleri sağlanacaktır. Diğer takımlar yakın zamanda açıklanacak olan malzeme listesini kullanarak gerekli parçaları satın alabilirler.
+                        </p>
+                    </div>
+                    <!-- /about content -->
+
+                    <!-- Numbers -->
+
+                    <!-- Numbers -->
+                    <div id="numbers">
+                        <div class="row">
+                            <h1>2020'den:</h1>
+                        </div>
+                        <!-- row -->
+                        <div class="row">
+                            <!-- number -->
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <div class="number">
+                                    <h3><span class="counter" data-from="0" data-to="20" data-speed="2700">0</span></h3>
+                                    <p>Okul</p>
+                                </div>
+                            </div>
+                            <!-- /number -->
+
+                            <!-- number -->
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <div class="number">
+                                    <h3><span class="counter" data-from="0" data-to="225" data-speed="2700">0</span>+
+                                    </h3>
+                                    <p>Katılımcı</p>
+                                </div>
+                            </div>
+                            <!-- /number -->
+
+                            <!-- number -->
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <div class="number">
+                                    <h3><span class="counter" data-from="0" data-to="15" data-speed="2700">0</span></h3>
+                                    <p>Robot Kİti</p>
+                                </div>
+                            </div>
+                            <!-- /number -->
+
+                            <!-- number -->
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <div class="number">
+                                    <h3><span class="counter" data-from="0" data-to="96" data-speed="2700">0</span>%
+                                    </h3>
+                                    <p>Memnuniyet</p>
+                                </div>
+                            </div>
+                            <!-- /number -->
+                        </div>
+                        <!-- /row -->
+                        <div id="numbers">
+                            <div class="row">
+                                <h1>2019'dan:</h1>
+                            </div>
+                            <!-- row -->
+                            <div class="row">
+                                <!-- number -->
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="number">
+                                        <h3><span class="counter" data-from="0" data-to="18" data-speed="2700">0</span>
+                                        </h3>
+                                        <p>Okul</p>
+                                    </div>
+                                </div>
+                                <!-- /number -->
+
+                                <!-- number -->
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="number">
+                                        <h3><span class="counter" data-from="0" data-to="80" data-speed="2700">0</span>+
+                                        </h3>
+                                        <p>Katılımcı</p>
+                                    </div>
+                                </div>
+                                <!-- /number -->
+
+                                <!-- number -->
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="number">
+                                        <h3><span class="counter" data-from="0" data-to="18" data-speed="2700">0</span>
+                                        </h3>
+                                        <p>Robot Kİti</p>
+                                    </div>
+                                </div>
+                                <!-- /number -->
+
+                                <!-- number -->
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+                                    <div class="number">
+                                        <h3><span class="counter" data-from="0" data-to="93" data-speed="2700">0</span>%
+                                        </h3>
+                                        <p>Memnuniyet</p>
+                                    </div>
+                                </div>
+                                <!-- /number -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- /Numbers -->
+
+                </div>
+
+            </div>
+
+            <!-- /container -->
+
+        </div>
+
+
+        <!-- /About -->
+
+        <!-- Galery -->
+        <div id="galery">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- galery owl -->
+                    <div id="galery-owl" class="owl-carousel owl-theme">
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img2.JPG" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img1.JPG" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img3.jpg" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img4.jpg" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img5.JPG" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img6.JPG" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/IMG_0418.JPG" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img8.JPG" alt="">
+                        </div>
+                        <!-- /galery item -->
+
+                        <!-- galery item -->
+                        <div class="galery-item">
+                            <img src="./img/img9.jpeg" alt="">
+                        </div>
+                        <!-- /galery item -->
+                        <div class="galery-item">
+                            <img src="./img/IMG_2462.jpg" alt="">
+                        </div>
+                        <div class="galery-item">
+                            <img src="./img/imgqq.png" alt="">
+                        </div>
+
+                    </div>
+                    <!-- /galery owl -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /Galery -->
+        <br>
+        <!-- Video CTA -->
+        <div id="video-cta" class="section">
+            <!-- background image -->
+            <div class="section-bg" style="background-image:url(./img/video1.png)"></div>
+            <!-- /background image -->
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- cta content -->
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="cta-content text-center">
+                            <a class="video-play" href="https://www.youtube.com/watch?v=tWIej24A-fE">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <h2 style="color: #000000"><mark style="background-color:#ffffff">2020 Yarışma
+									Videosu</mark></h2>
+                            <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+                        </div>
+                    </div>
+                    <!-- /cta content -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+
+        </a>
+    </div>
+    </div>
+
+
+    <!--Challenges-->
+    <div id="challenges" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h3 class="title" style="margin-bottom: 5px;"><span>Yarışma</span> <span style="color: #dd0a37;">Şartnamesi</span></h3>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1hsHqVAiVwvYBoUvGmPTJjqWT2iBiAOetJmHjBB0PY7Y/edit?usp=sharing" class="main-btn">Yarışma Şartnamesi</a>
+
+                    <!--Ödüller-->
+                    <div id="oduller" class="section">
+                        <h3 class="title" style="margin-bottom: 5px;">Ödüller<span></span> <span style="color: #dd0a37;"></span></h3>
+                        <br>
+                        <!-- 					<h1 style="color: #dd0a37;">1'incilik Ödülü</h1> -->
+                        <h4>Ödüller en kısa zamanda açıklanacaktır.</h4>
+                        <!-- <h4>Pololu Balboa 32U4 Dengede Duran Robot Kiti</h4>
 					<br>
 					<img src="img/RasPi4Kit.png" style="width:300px;height:300px;">
 					<img src="img/Balboa.jpg" style="width:300px;height:300px;">
@@ -491,145 +516,146 @@
 					<br>
 					<img src="img/RasPi0.png" style="width:300px;height:300px;">
 					<img src="img/RasPi0Kit.jpeg" style="width:300px;height:300px;"> -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--Ödüller-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Ödüller-->
 
-	<!-- Event Schedule -->
-	<div id="schedule" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Eğitim ve Yarışma</span> <span style="color: #dd0a37;">Programı</span></h3>
-				</div>
-				<!-- /section title -->
+        <!-- Event Schedule -->
+        <div id="schedule" class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- section title -->
+                    <div class="section-title">
+                        <h3 class="title"><span>Eğitim ve Yarışma</span> <span style="color: #dd0a37;">Programı</span>
+                        </h3>
+                    </div>
+                    <!-- /section title -->
 
-				<div class="row">
-					<div class="col-md-6">
-						<div class="events-wrapper" style="margin-bottom: 25px;">
-							<!-- event -->
-							<div class="event">
-								<div class="event-day">
-									<div>
-										<span class="day">Ocak</span>
-										<span class="year">Eğİtİm Ayı</span>
-									</div>
-								</div>
-								<div class="event-content">
-									<p class="event-time"><i></i></p>
-									<h3 class="event-title" style="color:  #dd0a37">Eğitim</h3>
-									<!--
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="events-wrapper" style="margin-bottom: 25px;">
+                                <!-- event -->
+                                <div class="event">
+                                    <div class="event-day">
+                                        <div>
+                                            <span class="day">Ocak</span>
+                                            <span class="year">Eğİtİm Ayı</span>
+                                        </div>
+                                    </div>
+                                    <div class="event-content">
+                                        <p class="event-time"><i></i></p>
+                                        <h3 class="event-title" style="color:  #dd0a37">Eğitim</h3>
+                                        <!--
 									<p>By <a href="#">John Doe</a></p> -->
-								</div>
-							</div>
-							<!-- /event -->
-<div class="event">
-								<div class="event-hour"></div>
-								<div class="event-content">
-									<p class="event-time"><i class="fa fa-clock-o"></i> 2 Ocak</p>
-									<h3 class="event-title">Udemy Eğitimine Başlanması</h3>
-								</div>
-							</div>
-							<!-- event -->
-							<div class="event">
-								<div class="event-hour"></div>
-								<div class="event-content">
-									<p class="event-time"><i class="fa fa-clock-o"></i>  16 Ocak</p>
-									<h3 class="event-title">Takım ve Mentor Görüşmeleri</h3>
-								</div>
-							</div>
-							<!-- /event -->
+                                    </div>
+                                </div>
+                                <!-- /event -->
+                                <div class="event">
+                                    <div class="event-hour"></div>
+                                    <div class="event-content">
+                                        <p class="event-time"><i class="fa fa-clock-o"></i> 2 Ocak</p>
+                                        <h3 class="event-title">Udemy Eğitimine Başlanması</h3>
+                                    </div>
+                                </div>
+                                <!-- event -->
+                                <div class="event">
+                                    <div class="event-hour"></div>
+                                    <div class="event-content">
+                                        <p class="event-time"><i class="fa fa-clock-o"></i> 16 Ocak</p>
+                                        <h3 class="event-title">Takım ve Mentor Görüşmeleri</h3>
+                                    </div>
+                                </div>
+                                <!-- /event -->
 
-							<!-- event -->
-							<div class="event">
-								<div class="event-hour"></div>
-								<div class="event-content">
-									<p class="event-time"><i class="fa fa-clock-o"></i> 30 Ocak</p>
-									<h3 class="event-title">Takım ve Mentor Görüşmeleri</h3>
-								</div>
-							</div>
-							<!-- /event -->
+                                <!-- event -->
+                                <div class="event">
+                                    <div class="event-hour"></div>
+                                    <div class="event-content">
+                                        <p class="event-time"><i class="fa fa-clock-o"></i> 30 Ocak</p>
+                                        <h3 class="event-title">Takım ve Mentor Görüşmeleri</h3>
+                                    </div>
+                                </div>
+                                <!-- /event -->
 
-							<!-- event -->
-							
-							<!-- /event -->
+                                <!-- event -->
 
-							<!-- event -->
-						
-							<!-- /event -->
-						</div>
-					</div>
+                                <!-- /event -->
 
-					<div class="col-md-6">
+                                <!-- event -->
 
-					
-						<div class="events-wrapper" style="margin-bottom: 25px;">
-							<!-- event -->
-							<div class="event">
-								<div class="event-day">
-									<div>
-										<span class="day">10</span>
-										<span class="year">Nisan, 2021</span>
-									</div>
-								</div>
+                                <!-- /event -->
+                            </div>
+                        </div>
 
-								<div class="event-content">
-									<p class="event-time"> </p>
-									<h3 class="event-title" style="color:  #dd0a37">Yarışma</h3>
-								</div>
-							</div>
-							<!-- /event -->
-<div class="event">
-								<div class="event-hour"></div>
-								<div class="event-content">
-									<p class="event-time"><i class="fa fa-clock-o"></i> 9 : 30 AM - 10 : 10 AM</p>
-									<h3 class="event-title">Açılış</h3>
-								</div>
-							</div>
-							<!-- event -->
-							<div class="event">
-								<div class="event-hour"></div>
-								<div class="event-content">
-									<p class="event-time"><i class="fa fa-clock-o"></i> 10 :10 AM - 11 : 20 AM</p>
-									<h3 class="event-title">Videoların İzlenmesi</h3>
-								</div>
-							</div>
-							<!-- /event -->
+                        <div class="col-md-6">
 
-							<!-- event -->
-							<div class="event">
-								<div class="event-hour"></div>
-								<div class="event-content">
-									<p class="event-time"><i class="fa fa-clock-o"></i> 11 : 20 AM - 12 :00 PM</p>
-									<h3 class="event-title">Kazananların Açıklanması & Kapanış</h3>
-								</div>
-							</div>
-							<!-- /event -->
 
-							<!-- event -->
-						
-							<!-- /event -->
-						</div>
-					</div>
-					
+                            <div class="events-wrapper" style="margin-bottom: 25px;">
+                                <!-- event -->
+                                <div class="event">
+                                    <div class="event-day">
+                                        <div>
+                                            <span class="day">10</span>
+                                            <span class="year">Nisan, 2021</span>
+                                        </div>
+                                    </div>
 
-					
-				<!--
+                                    <div class="event-content">
+                                        <p class="event-time"> </p>
+                                        <h3 class="event-title" style="color:  #dd0a37">Yarışma</h3>
+                                    </div>
+                                </div>
+                                <!-- /event -->
+                                <div class="event">
+                                    <div class="event-hour"></div>
+                                    <div class="event-content">
+                                        <p class="event-time"><i class="fa fa-clock-o"></i> 9 : 30 AM - 10 : 10 AM</p>
+                                        <h3 class="event-title">Açılış</h3>
+                                    </div>
+                                </div>
+                                <!-- event -->
+                                <div class="event">
+                                    <div class="event-hour"></div>
+                                    <div class="event-content">
+                                        <p class="event-time"><i class="fa fa-clock-o"></i> 10 :10 AM - 11 : 20 AM</p>
+                                        <h3 class="event-title">Videoların İzlenmesi</h3>
+                                    </div>
+                                </div>
+                                <!-- /event -->
+
+                                <!-- event -->
+                                <div class="event">
+                                    <div class="event-hour"></div>
+                                    <div class="event-content">
+                                        <p class="event-time"><i class="fa fa-clock-o"></i> 11 : 20 AM - 12 :00 PM</p>
+                                        <h3 class="event-title">Kazananların Açıklanması & Kapanış</h3>
+                                    </div>
+                                </div>
+                                <!-- /event -->
+
+                                <!-- event -->
+
+                                <!-- /event -->
+                            </div>
+                        </div>
+
+
+
+                        <!--
 				<div class="download-btn" style="margin-bottom: 40px">
 					<a href="#" class="main-btn">Ajandayı İndİr</a>
 				</div> -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
 
-	<!-- 
+            <!-- 
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -673,152 +699,153 @@
 			</div>
 		</div>
 	</div>	 -->
-	<!-- /Ek Bilgiler -->
-	<div id="ekbilgiler" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>KVKK</span> <span style="color: #dd0a37;"></span></h3>
-				</div>
-				<!-- /section title -->
-				<p style="text-align:center">Hisar Okulları'nın kişisel verilerin korunması hakkında bilgilendirme metinlerine <a href="KVKK.pdf" style="text-align:center">https://piwars.hisarcs.com/KVKK.pdf </a>linkinden ulaşabilirsiniz.</p>
+            <!-- /Ek Bilgiler -->
+            <div id="ekbilgiler" class="section">
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <!-- section title -->
+                        <div class="section-title">
+                            <h3 class="title"><span>KVKK</span> <span style="color: #dd0a37;"></span></h3>
+                        </div>
+                        <!-- /section title -->
+                        <p style="text-align:center">Hisar Okulları'nın kişisel verilerin korunması hakkında bilgilendirme metinlerine <a href="KVKK.pdf" style="text-align:center">https://piwars.hisarcs.com/KVKK.pdf </a>linkinden ulaşabilirsiniz.
+                        </p>
 
-				
-			</div>
-		</div>
-	</div>
-	<!-- /Ulaşım-->
 
-	<!-- Başvur -->
-	<div id="cta" class="section">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/img10.JPG)" data-stellar-background-ratio="0.5"></div>
-		<!-- /background image -->
+                    </div>
+                </div>
+            </div>
+            <!-- /Ulaşım-->
 
-		<!-- container -->
-		<div class="container">
-			<!-- container -->
-			<div class="row">
-				<!-- cta content -->
-				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<h2>Şimdi Başvurun!</h2>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform?usp=sf_link" class="main-btn">Başvur</a>
+            <!-- Başvur -->
+            <div id="cta" class="section">
+                <!-- background image -->
+                <div class="section-bg" style="background-image:url(./img/img10.JPG)" data-stellar-background-ratio="0.5"></div>
+                <!-- /background image -->
 
-					</div>
-				</div>
-				<!-- /cta content -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Başvur -->
+                <!-- container -->
+                <div class="container">
+                    <!-- container -->
+                    <div class="row">
+                        <!-- cta content -->
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="cta-content text-center">
+                                <h2>Şimdi Başvurun!</h2>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform?usp=sf_link" class="main-btn">Başvur</a>
 
-	<!-- Speakers -->
-	
+                            </div>
+                        </div>
+                        <!-- /cta content -->
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /Başvur -->
 
-			<!-- /row -->
-		
+            <!-- Speakers -->
 
-	<!-- Contact -->
-	<div id="contact" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span style="color: #dd0a37;">İletişim</span></h3>
-				</div>
-				<!-- /section title -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Adres</h3>
-						<p>Hisar Okulları</p>
-						<p>Göktürk Merkez, İstanbul Cad. No:3, 34077 Eyüp/İstanbul</p>
-					</div>
-				</div>
-				<!-- /contact -->
+            <!-- /row -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Telefon</h3>
-						<p>(0212) 364 00 00</p>
-					</div>
-				</div>
-				<!-- /contact -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>E-Posta</h3>
-						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hisarcs@gmail.com">hisarcs@hisarschool.k12.tr</a>
-					</div>
-				</div>
-				<!-- /contact -->
+            <!-- Contact -->
+            <div id="contact" class="section">
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <!-- section title -->
+                        <div class="section-title">
+                            <h3 class="title"><span style="color: #dd0a37;">İletişim</span></h3>
+                        </div>
+                        <!-- /section title -->
 
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
+                        <!-- contact -->
+                        <div class="col-sm-4">
+                            <div class="contact">
+                                <h3>Adres</h3>
+                                <p>Hisar Okulları</p>
+                                <p>Göktürk Merkez, İstanbul Cad. No:3, 34077 Eyüp/İstanbul</p>
+                            </div>
+                        </div>
+                        <!-- /contact -->
 
-		<!-- Map
+                        <!-- contact -->
+                        <div class="col-sm-4">
+                            <div class="contact">
+                                <h3>Telefon</h3>
+                                <p>(0212) 364 00 00</p>
+                            </div>
+                        </div>
+                        <!-- /contact -->
+
+                        <!-- contact -->
+                        <div class="col-sm-4">
+                            <div class="contact">
+                                <h3>E-Posta</h3>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hisarcs@gmail.com">hisarcs@hisarschool.k12.tr</a>
+                            </div>
+                        </div>
+                        <!-- /contact -->
+
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+
+                <!-- Map
 		<div id="map">
 			<script async defer
     		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoBInp9DkF2UN6rpDqx_aid5ZQ5_GcAE8&callback=initMap">
     		</script>
 		</div>
 		/Map -->
-	</div>
-	<!-- /Contact -->
+            </div>
+            <!-- /Contact -->
 
 
 
-	<!-- Footer -->
-	<footer id="footer">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
+            <!-- Footer -->
+            <footer id="footer">
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
 
-				<!-- footer logo -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/Pi Wars Logo - Turkey.jpg" alt="logo">
-						</a>
-					</div>
-				</div>
-				<!-- /footer logo -->
+                        <!-- footer logo -->
+                        <div class="col-md-4 col-md-push-4">
+                            <div class="footer-brand">
+                                <a class="logo" href="index.html">
+                                    <img class="logo-img" src="./img/Pi Wars Logo - Turkey.jpg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /footer logo -->
 
-				<div class="col-md-4 col-md-push-4">
-					<div class="contact-social">
-						<a href="https://tr-tr.facebook.com/hisarcs/"><i class="fa fa-facebook"></i></a>
-						<a href="https://twitter.com/hisarcs?lang=en"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.instagram.com/hisarcs/"><i class="fa fa-instagram"></i></a>
-					</div>
-				</div>
+                        <div class="col-md-4 col-md-push-4">
+                            <div class="contact-social">
+                                <a href="https://tr-tr.facebook.com/hisarcs/"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/hisarcs?lang=en"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/hisarcs/"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
 
 
-	</footer>
-	<!-- /Footer -->
+            </footer>
+            <!-- /Footer -->
 
-	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/google-map.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/main.js"></script>
+            <!-- jQuery Plugins -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.waypoints.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/jquery.stellar.min.js"></script>
+            <script src="js/google-map.js"></script>
+            <script src="js/jquery.countTo.js"></script>
+            <script src="js/main.js"></script>
 
 </body>
 
