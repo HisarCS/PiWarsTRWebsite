@@ -1,12 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Pi Wars'24</title>
+	<title>Pi Wars'26</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -25,48 +26,48 @@
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
 	<script type="text/javascript">
-			function countDown() {
-				var today = new Date();
-				var eventDate = new Date("March 7,2020 08:30:00");
+		function countDown() {
+			var today = new Date();
+			var eventDate = new Date("March 7,2020 08:30:00");
 
-				var currentTime = today.getTime();
-				var eventTime = eventDate.getTime();
+			var currentTime = today.getTime();
+			var eventTime = eventDate.getTime();
 
-				var remTime = eventTime - currentTime;
+			var remTime = eventTime - currentTime;
 
-				var sec = Math.floor(remTime / 1000);
-				var min = Math.floor(sec / 60);
-				var hrs = Math.floor(min / 60);
-				var days = Math.floor(hrs / 24);
+			var sec = Math.floor(remTime / 1000);
+			var min = Math.floor(sec / 60);
+			var hrs = Math.floor(min / 60);
+			var days = Math.floor(hrs / 24);
 
-				hrs = hrs % 24;
-				min %= 60;
-				sec %= 60;
-				hrs = (hrs < 10) ? "0" + hrs : hrs;
-				min = (min < 10) ? "0" + min : min;
-				sec = (sec < 10) ? "0" + sec : sec;
-				document.getElementById("days").innerHTML = days;
-				document.getElementById("hrs").innerHTML = hrs;
-				document.getElementById("mins").innerHTML = min;
-				document.getElementById("secs").innerHTML = sec;
+			hrs = hrs % 24;
+			min %= 60;
+			sec %= 60;
+			hrs = (hrs < 10) ? "0" + hrs : hrs;
+			min = (min < 10) ? "0" + min : min;
+			sec = (sec < 10) ? "0" + sec : sec;
+			document.getElementById("days").innerHTML = days;
+			document.getElementById("hrs").innerHTML = hrs;
+			document.getElementById("mins").innerHTML = min;
+			document.getElementById("secs").innerHTML = sec;
 
-				setTimeout(countDown, 1000);
-			}
+			setTimeout(countDown, 1000);
+		}
 
-			window.onbeforeunload = function () {
-  			window.scrollTo(0, 0);
-			}
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
 
-			function initMap() {
-  				// The location of Uluru
-  				var uluru = {lat: -25.344, lng: 131.036};
-  				// The map, centered at Uluru
-  				var map = new google.maps.Map(
-      			document.getElementById('map'), {zoom: 4, center: uluru});
-  				// The marker, positioned at Uluru
-  				var marker = new google.maps.Marker({position: uluru, map: map});
-			}
-		</script>
+		function initMap() {
+			// The location of Uluru
+			var uluru = { lat: -25.344, lng: 131.036 };
+			// The map, centered at Uluru
+			var map = new google.maps.Map(
+				document.getElementById('map'), { zoom: 4, center: uluru });
+			// The marker, positioned at Uluru
+			var marker = new google.maps.Marker({ position: uluru, map: map });
+		}
+	</script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,6 +76,7 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 </head>
+
 <body onload="countDown()">
 
 	<!-- Header -->
@@ -94,15 +96,17 @@
 
 				<!-- Mobile toggle -->
 				<button class="navbar-toggle">
-						<i class="fa fa-bars"></i>
-					</button>
+					<i class="fa fa-bars"></i>
+				</button>
 				<!-- /Mobile toggle -->
 			</div>
 			<!-- /navbar header -->
 
 			<!-- Navigation -->
-			<input type="image" src="img/engFlag.jpg" name="eng" width="24" height="18" onclick="window.location='index2.html';">
-			<input type="image" src="img/trFlag.jpg" name="tr" width="24" height="18" onclick="window.location='index.html';">
+			<input type="image" src="img/engFlag.jpg" name="eng" width="24" height="18"
+				onclick="window.location='index2.html';">
+			<input type="image" src="img/trFlag.jpg" name="tr" width="24" height="18"
+				onclick="window.location='index.html';">
 			<nav id="nav">
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
@@ -139,7 +143,8 @@
 					<div class="col-md-8 col-md-offset-2">
 						<div class="home-content">
 							<h1 style="font-size: 75px">Pi Wars Turkey <h1>2020</h1>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSeaYNP7d7rrKD_SDHtvuzCDwAiQAcCsWZ_EhPOqyftaajdtsQ/viewform?usp=sf_link" class="main-btn">Apply</a>
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSeaYNP7d7rrKD_SDHtvuzCDwAiQAcCsWZ_EhPOqyftaajdtsQ/viewform?usp=sf_link"
+									class="main-btn">Apply</a>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -152,29 +157,29 @@
 	</div>
 	<div class="countdown" style="background: #dd0a37">
 		<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- home content -->
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="days" class="timer">0</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">Days</h2>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="hrs" class="timer">00</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">Hours</h2>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="mins" class="timer">00</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">Minutes</h2>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
-						<h1 id="secs" class="timer">00</h1>
-						<h2 style="text-align: center;margin-bottom: 40px;">Seconds</h2>
-					</div>
-					<!-- /home content -->
+			<!-- row -->
+			<div class="row">
+				<!-- home content -->
+				<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+					<h1 id="days" class="timer">0</h1>
+					<h2 style="text-align: center;margin-bottom: 40px;">Days</h2>
 				</div>
-				<!-- /row -->
+				<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+					<h1 id="hrs" class="timer">00</h1>
+					<h2 style="text-align: center;margin-bottom: 40px;">Hours</h2>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+					<h1 id="mins" class="timer">00</h1>
+					<h2 style="text-align: center;margin-bottom: 40px;">Minutes</h2>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6" style="margin:auto;">
+					<h1 id="secs" class="timer">00</h1>
+					<h2 style="text-align: center;margin-bottom: 40px;">Seconds</h2>
+				</div>
+				<!-- /home content -->
 			</div>
+			<!-- /row -->
+		</div>
 	</div>
 	<!-- /Home -->
 
@@ -186,7 +191,8 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<p>The registrations for this event will open at January 19th 09:00, and close at January 31st 23:59.</p>
+					<p>The registrations for this event will open at January 19th 09:00, and close at January 31st
+						23:59.</p>
 					<br>
 					<h3 class="title"><span>Pi Wars TR</span> <span style="color: #dd0a37;">Competition</span></h3>
 					<h3>March 6-7</h3>
@@ -196,10 +202,16 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>Pi Wars is a Raspberry Pi based mobile robotics competition held in Cambridge University for the last 5 years. In the competition, teams compete their robots in various autonomous and remote controlled challenges and get ranked according to their success rate and completion time in each challenge. 
-						<br>
-						<br>
-						This year, by hosting the 2nd Pi Wars Turkey event in Hisar School, we hope to bring this beginner friendly, non-destructive and incredibly fun competition culture to our country. We hope to make robotics more accessible and encourage more students in Turkey to pursue STEAM fields. 
+						<p>Pi Wars is a Raspberry Pi based mobile robotics competition held in Cambridge University for
+							the last 5 years. In the competition, teams compete their robots in various autonomous and
+							remote controlled challenges and get ranked according to their success rate and completion
+							time in each challenge.
+							<br>
+							<br>
+							This year, by hosting the 2nd Pi Wars Turkey event in Hisar School, we hope to bring this
+							beginner friendly, non-destructive and incredibly fun competition culture to our country. We
+							hope to make robotics more accessible and encourage more students in Turkey to pursue STEAM
+							fields.
 						</p>
 					</div>
 					<!-- /about content -->
@@ -217,10 +229,15 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>We are aware that we can't complete our mission of making robotics more accessible to everyone with just a competition. Therefore, for the 2nd time, we are organizing a Pi Wars Turkey workshop.  
-						<br>
-						<br>
-						In this 2-day workshop, students from our team will be giving classes on Python, Raspberry Pi, 3D Design, and computer vision to select teams. At the end of the workshop, each team will build their own basic RasPi robot and get a robot kit for making additions to their robots later on. 
+						<p>We are aware that we can't complete our mission of making robotics more accessible to
+							everyone with just a competition. Therefore, for the 2nd time, we are organizing a Pi Wars
+							Turkey workshop.
+							<br>
+							<br>
+							In this 2-day workshop, students from our team will be giving classes on Python, Raspberry
+							Pi, 3D Design, and computer vision to select teams. At the end of the workshop, each team
+							will build their own basic RasPi robot and get a robot kit for making additions to their
+							robots later on.
 						</p>
 					</div>
 					<!-- /about content -->
@@ -245,7 +262,8 @@
 							<!-- number -->
 							<div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="80" data-speed="3700">0</span>+</h3>
+									<h3><span class="counter" data-from="0" data-to="80" data-speed="3700">0</span>+
+									</h3>
 									<p>Competitors</p>
 								</div>
 							</div>
@@ -263,7 +281,8 @@
 							<!-- number -->
 							<div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="93" data-speed="3700">0</span>%</h3>
+									<h3><span class="counter" data-from="0" data-to="93" data-speed="3700">0</span>%
+									</h3>
 									<p>Positive Feedback</p>
 								</div>
 							</div>
@@ -354,7 +373,8 @@
 	<!-- Video CTA -->
 	<div id="video-cta" class="section">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/grupUstten.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-image:url(./img/grupUstten.jpg)" data-stellar-background-ratio="0.5">
+		</div>
 		<!-- /background image -->
 
 		<!-- container -->
@@ -384,9 +404,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
-					<h3 class="title" style="margin-bottom: 5px;"><span>Competition</span> <span style="color: #dd0a37;">Maual</span></h3>
+					<h3 class="title" style="margin-bottom: 5px;"><span>Competition</span> <span
+							style="color: #dd0a37;">Maual</span></h3>
 					<br>
-					<a href="https://docs.google.com/document/d/1NynWFkmtHJqxk1lnAeBCe_QwvjCosYZzoNqNkT9R5gY/edit?usp=sharing" class="main-btn">Competition Manual</a>
+					<a href="https://docs.google.com/document/d/1NynWFkmtHJqxk1lnAeBCe_QwvjCosYZzoNqNkT9R5gY/edit?usp=sharing"
+						class="main-btn">Competition Manual</a>
 				</div>
 			</div>
 		</div>
@@ -398,7 +420,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
-					<h3 class="title" style="margin-bottom: 5px;">Awards<span></span> <span style="color: #dd0a37;"></span></h3>
+					<h3 class="title" style="margin-bottom: 5px;">Awards<span></span> <span
+							style="color: #dd0a37;"></span></h3>
 					<br>
 					<h1 style="color: #dd0a37;">1st Prize</h1>
 					<h4>Raspberry Pi 4-4GB Starter Kit</h4>
@@ -723,325 +746,346 @@
 				<!-- section title -->
 				<div class="section-title">
 					<h3 class="title"><span>Personal</span> <span style="color: #dd0a37;">Data</span></h3>
-					<p style="text-align:center">You can access Hisar School's policy on personal data collection and security from the link: <a href="KVKK.pdf" style="text-align:center">https://piwars.hisarcs.com/KVKK.pdf</a> </p>
-				<div class="section-title">
-					<h3 class="title"><span>Meals &</span> <span style="color: #dd0a37;"> Transportation</span></h3>
-				<p style="text-align:center">Transportation and accomodation costs will be supplied by teams. Breakfast and lunch will be served at our event.</p>
+					<p style="text-align:center">You can access Hisar School's policy on personal data collection and
+						security from the link: <a href="KVKK.pdf"
+							style="text-align:center">https://piwars.hisarcs.com/KVKK.pdf</a> </p>
+					<div class="section-title">
+						<h3 class="title"><span>Meals &</span> <span style="color: #dd0a37;"> Transportation</span></h3>
+						<p style="text-align:center">Transportation and accomodation costs will be supplied by teams.
+							Breakfast and lunch will be served at our event.</p>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<!-- /Ulaşım-->
-	<!-- Sponsors -->
-	<div id="sponsors" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
-				</div>
-				<!-- /section title -->
+			<!-- /Ulaşım-->
+			<!-- Sponsors -->
+			<div id="sponsors" class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- section title -->
+						<div class="section-title">
+							<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Sponsors</span></h3>
+						</div>
+						<!-- /section title -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="https://shop.pimoroni.com/" class="sponsor">
-						<img src="./img/Pimoroni_logo.png" alt="">
-						<p style="text-align:center"> shop.pimoroni.com</p>
-					</a>
-				</div>
-				<!-- /sponsor -->
+						<!-- sponsor -->
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="https://shop.pimoroni.com/" class="sponsor">
+								<img src="./img/Pimoroni_logo.png" alt="">
+								<p style="text-align:center"> shop.pimoroni.com</p>
+							</a>
+						</div>
+						<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="https://anavi.technology/" class="sponsor">
-						<img src="./img/anavi-logo.png" alt="">
-						<p style="text-align:center"> anavi.technology</p>
-					</a>
-				</div>
-				<!-- /sponsor -->
+						<!-- sponsor -->
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="https://anavi.technology/" class="sponsor">
+								<img src="./img/anavi-logo.png" alt="">
+								<p style="text-align:center"> anavi.technology</p>
+							</a>
+						</div>
+						<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="https://anavi.technology/" class="sponsor">
-						<img src="./img/ROBOTISTAN_LOGO.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
+						<!-- sponsor -->
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="https://anavi.technology/" class="sponsor">
+								<img src="./img/ROBOTISTAN_LOGO.png" alt="">
+							</a>
+						</div>
+						<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="https://www.pololu.com/" class="sponsor">
-						<img src="./img/pololu_logo.png" alt="">
-					</a>
-				</div>
-				<!-- /sponsor -->
+						<!-- sponsor -->
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="https://www.pololu.com/" class="sponsor">
+								<img src="./img/pololu_logo.png" alt="">
+							</a>
+						</div>
+						<!-- /sponsor -->
 
-				<!-- sponsor -->
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="https://market.samm.com/" class="sponsor">
-						<img src="./img/samm-market-logo-01.png" alt="">
-					</a>
+						<!-- sponsor -->
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="https://market.samm.com/" class="sponsor">
+								<img src="./img/samm-market-logo-01.png" alt="">
+							</a>
+						</div>
+						<!-- /sponsor -->
+
+					</div>
+					<!-- /row -->
 				</div>
-				<!-- /sponsor -->
-				
+				<!-- /container -->
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Sponsors -->
+			<!-- /Sponsors -->
 
-	<!-- Speakers -->
-	<div id="speakers" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Team</span></h3>
-				</div>
-				<!-- section title -->
+			<!-- Speakers -->
+			<div id="speakers" class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- section title -->
+						<div class="section-title">
+							<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Team</span></h3>
+						</div>
+						<!-- section title -->
 
-				<!-- speaker -->
-				<div class="col-md-4 col-sm-6">
-					<div class="speaker">
-						<div class="speaker-img">
-							<img src="./img/team1.jpeg" alt="">
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-content">
-								<h2>Can Ersoz</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /speaker -->
-
-				<!-- speaker -->
-				<div class="col-md-4 col-sm-6">
-					<div class="speaker">
-						<div class="speaker-img">
-							<img src="./img/team2.JPG" alt="">
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-content">
-								<h2>Yoel Kastro</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /speaker -->
-
-				<!-- speaker -->
-				<div class="col-md-4 col-sm-6">
-					<div class="speaker">
-						<div class="speaker-img">
-							<img src="./img/team3.jpeg" >
-						</div>
-						<div class="speaker-body">
-							<div class="speaker-content">
-								<h2>Yasar İdikut</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /speaker -->
-
-				<!-- speaker modal -->
-				<div id="speaker-modal-1" class="speaker-modal modal fade">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
-							<div class="modal-body">
-								<div class="row">
-									<div class="col-md-5">
-										<div class="speaker-modal-img">
-											<img src="./img/speaker-info.jpg" alt="">
-										</div>
+						<!-- speaker -->
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-img">
+									<img src="./img/team1.jpeg" alt="">
+								</div>
+								<div class="speaker-body">
+									<div class="speaker-content">
+										<h2>Can Ersoz</h2>
 									</div>
-									<div class="col-md-7">
-										<div class="speaker-modal-content">
-											<h2 class="speaker-name">John Doe</h2>
-											<span class="speaker-job">- Manager, CEO</span>
+								</div>
+							</div>
+						</div>
+						<!-- /speaker -->
 
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-												irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<!-- speaker -->
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-img">
+									<img src="./img/team2.JPG" alt="">
+								</div>
+								<div class="speaker-body">
+									<div class="speaker-content">
+										<h2>Yoel Kastro</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /speaker -->
 
-											<div class="speaker-website">
-												<h4>Website</h4>
-												<a href="#">www.johndoe.com</a>
-											</div>
+						<!-- speaker -->
+						<div class="col-md-4 col-sm-6">
+							<div class="speaker">
+								<div class="speaker-img">
+									<img src="./img/team3.jpeg">
+								</div>
+								<div class="speaker-body">
+									<div class="speaker-content">
+										<h2>Yasar İdikut</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /speaker -->
 
-											<div class="speaker-social">
-												<h4>Social Profile</h4>
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-instagram"></i></a>
-												<a href="#"><i class="fa fa fa-linkedin"></i></a>
-											</div>
-
-											<div class="speaker-events">
-												<h4>Sessions</h4>
-												<div class="speaker-event">
-													<span><strong>Day 1 -</strong> February 20, 2018 8 : 00 AM - 11 : 00 AM</span>
-													<p>His id altera fabellas facilisis. Has eros assueverit cu</p>
+						<!-- speaker modal -->
+						<div id="speaker-modal-1" class="speaker-modal modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="speaker-modal-img">
+													<img src="./img/speaker-info.jpg" alt="">
 												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="speaker-modal-content">
+													<h2 class="speaker-name">John Doe</h2>
+													<span class="speaker-job">- Manager, CEO</span>
 
-												<div class="speaker-event">
-													<span><strong>Day 2 -</strong> February 20, 2018 8 : 00 AM - 11 : 00 AM</span>
-													<p>At mucius deserunt delicatissimi eam, labitur detraxit ut sit</p>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+														eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+														enim ad minim veniam, quis nostrud exercitation ullamco laboris
+														nisi ut aliquip ex ea commodo consequat. Duis aute
+														irure dolor in reprehenderit in voluptate velit esse cillum
+														dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+														cupidatat non proident, sunt in culpa qui officia deserunt
+														mollit anim id est laborum.</p>
+
+													<div class="speaker-website">
+														<h4>Website</h4>
+														<a href="#">www.johndoe.com</a>
+													</div>
+
+													<div class="speaker-social">
+														<h4>Social Profile</h4>
+														<a href="#"><i class="fa fa-facebook"></i></a>
+														<a href="#"><i class="fa fa-twitter"></i></a>
+														<a href="#"><i class="fa fa-instagram"></i></a>
+														<a href="#"><i class="fa fa fa-linkedin"></i></a>
+													</div>
+
+													<div class="speaker-events">
+														<h4>Sessions</h4>
+														<div class="speaker-event">
+															<span><strong>Day 1 -</strong> February 20, 2018 8 : 00 AM -
+																11 : 00 AM</span>
+															<p>His id altera fabellas facilisis. Has eros assueverit cu
+															</p>
+														</div>
+
+														<div class="speaker-event">
+															<span><strong>Day 2 -</strong> February 20, 2018 8 : 00 AM -
+																11 : 00 AM</span>
+															<p>At mucius deserunt delicatissimi eam, labitur detraxit ut
+																sit</p>
+														</div>
+													</div>
+
 												</div>
 											</div>
-
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!-- /speaker modal -->
 					</div>
+					<!-- /row -->
 				</div>
-				<!-- /speaker modal -->
+				<!-- /container -->
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Speakers -->
-	
-	<!-- CTA -->
-	<div id="cta" class="section">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/img10.JPG)" data-stellar-background-ratio="0.5"></div>
-		<!-- /background image -->
+			<!-- /Speakers -->
 
-		<!-- container -->
-		<div class="container">
-			<!-- container -->
-			<div class="row">
-				<!-- cta content -->
-				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<h2>Apply Now!</h2>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLSeaYNP7d7rrKD_SDHtvuzCDwAiQAcCsWZ_EhPOqyftaajdtsQ/viewform?usp=sf_link" class="main-btn">Apply</a>
+			<!-- CTA -->
+			<div id="cta" class="section">
+				<!-- background image -->
+				<div class="section-bg" style="background-image:url(./img/img10.JPG)"
+					data-stellar-background-ratio="0.5"></div>
+				<!-- /background image -->
+
+				<!-- container -->
+				<div class="container">
+					<!-- container -->
+					<div class="row">
+						<!-- cta content -->
+						<div class="col-md-8 col-md-offset-2">
+							<div class="cta-content text-center">
+								<h2>Apply Now!</h2>
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSeaYNP7d7rrKD_SDHtvuzCDwAiQAcCsWZ_EhPOqyftaajdtsQ/viewform?usp=sf_link"
+									class="main-btn">Apply</a>
+							</div>
+						</div>
+						<!-- /cta content -->
 					</div>
+					<!-- /row -->
 				</div>
-				<!-- /cta content -->
+				<!-- /container -->
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /CTA -->
+			<!-- /CTA -->
 
-	<!-- Contact -->
-	<div id="contact" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Us</span></h3>
-				</div>
-				<!-- /section title -->
+			<!-- Contact -->
+			<div id="contact" class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- section title -->
+						<div class="section-title">
+							<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Us</span></h3>
+						</div>
+						<!-- /section title -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Adress</h3>
-						<p>Hisar School</p>
-						<p>Göktürk Merkez, İstanbul Cd. No:3, 34077 Eyüp/İstanbul</p>
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<h3>Adress</h3>
+								<p>Hisar School</p>
+								<p>Göktürk Merkez, İstanbul Cd. No:3, 34077 Eyüp/İstanbul</p>
+							</div>
+						</div>
+						<!-- /contact -->
+
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<h3>Phone</h3>
+								<p>(0212) 364 00 00</p>
+							</div>
+						</div>
+						<!-- /contact -->
+
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<h3>Mail</h3>
+								<a
+									href="https://mail.google.com/mail/?view=cm&fs=1&to=hisarcs@gmail.com">hisarcs@gmail.com</a>
+							</div>
+						</div>
+						<!-- /contact -->
+
 					</div>
+					<!-- /row -->
 				</div>
-				<!-- /contact -->
+				<!-- /container -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Phone</h3>
-						<p>(0212) 364 00 00</p>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Mail</h3>
-						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=hisarcs@gmail.com">hisarcs@gmail.com</a>
-					</div>
-				</div>
-				<!-- /contact -->
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-
-		<!-- Map
+				<!-- Map
 		<div id="map">
 			<script async defer
     		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoBInp9DkF2UN6rpDqx_aid5ZQ5_GcAE8&callback=initMap">
     		</script>
 		</div>
 		/Map -->
-	</div>
-	<!-- /Contact -->
-
-	<!-- Footer -->
-	<footer id="footer">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-
-				<!-- footer logo -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/Pi Wars Logo - Turkey.jpg" alt="logo">
-						</a>
-					</div>
-				</div>
-				<!-- /footer logo -->
-
-				<!-- contact social -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="contact-social">
-						<a href="https://tr-tr.facebook.com/hisarcs/"><i class="fa fa-facebook"></i></a>
-						<a href="https://twitter.com/hisarcs?lang=en"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.instagram.com/hisarcs/"><i class="fa fa-instagram"></i></a>
-					</div>
-				</div>
-				<!-- /contact social -->
-
-				<!-- copyright -->
-				<div class="col-md-4 col-md-pull-8">
-					<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-				</div>
-				<!-- /copyright -->
-
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</footer>
-	<!-- /Footer -->
+			<!-- /Contact -->
 
-	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script src="js/google-map.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/main.js"></script>
+			<!-- Footer -->
+			<footer id="footer">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+
+						<!-- footer logo -->
+						<div class="col-md-4 col-md-push-4">
+							<div class="footer-brand">
+								<a class="logo" href="index.html">
+									<img class="logo-img" src="./img/Pi Wars Logo - Turkey.jpg" alt="logo">
+								</a>
+							</div>
+						</div>
+						<!-- /footer logo -->
+
+						<!-- contact social -->
+						<div class="col-md-4 col-md-push-4">
+							<div class="contact-social">
+								<a href="https://tr-tr.facebook.com/hisarcs/"><i class="fa fa-facebook"></i></a>
+								<a href="https://twitter.com/hisarcs?lang=en"><i class="fa fa-twitter"></i></a>
+								<a href="https://www.instagram.com/hisarcs/"><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+						<!-- /contact social -->
+
+						<!-- copyright -->
+						<div class="col-md-4 col-md-pull-8">
+							<span
+								class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+								template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+									href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+						</div>
+						<!-- /copyright -->
+
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</footer>
+			<!-- /Footer -->
+
+			<!-- jQuery Plugins -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.stellar.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+			<script src="js/google-map.js"></script>
+			<script src="js/jquery.countTo.js"></script>
+			<script src="js/main.js"></script>
 
 </body>
 

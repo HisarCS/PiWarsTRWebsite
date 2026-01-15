@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Pi Wars TR'24</title>
+    <title>Pi Wars TR'26</title>
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
@@ -28,7 +28,7 @@
     <script type="text/javascript">
         function countDown() {
             var today = new Date();
-            var eventDate = new Date("February 10,2024 08:30:00");
+            var eventDate = new Date("April 18, 2026 08:00:00");
 
             var currentTime = today.getTime();
             var eventTime = eventDate.getTime();
@@ -51,10 +51,10 @@
             document.getElementById("mins").innerHTML = min;
             document.getElementById("secs").innerHTML = sec;
 
-            setTimeout(countDown, 3000);
+            setTimeout(countDown, 1000);
         }
 
-        window.onbeforeunload = function() {
+        window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }
 
@@ -67,9 +67,9 @@
             // The map, centered at Uluru
             var map = new google.maps.Map(
                 document.getElementById('map'), {
-                    zoom: 4,
-                    center: uluru
-                });
+                zoom: 4,
+                center: uluru
+            });
             // The marker, positioned at Uluru
             var marker = new google.maps.Marker({
                 position: uluru,
@@ -105,32 +105,27 @@
 
                 <!-- Mobile toggle -->
                 <button class="navbar-toggle">
-					<i class="fa fa-bars"></i>
-				</button>
+                    <i class="fa fa-bars"></i>
+                </button>
                 <!-- /Mobile toggle -->
             </div>
             <!-- /navbar header -->
 
             <!-- Navigation -->
-            <input type="image" src="img/engFlag.jpg" name="eng" width="24" height="18" onclick="window.location='index2.html';">
-            <input type="image" src="img/trFlag.jpg" name="tr" width="24" height="18" onclick="window.location='index.html';">
+            <input type="image" src="img/engFlag.jpg" name="eng" width="24" height="18"
+                onclick="window.location='index2.html';">
+            <input type="image" src="img/trFlag.jpg" name="tr" width="24" height="18"
+                onclick="window.location='index.html';">
             <nav id="nav">
                 <ul class="main-nav nav navbar-nav navbar-right">
-                    <li><a href="index.html">Pi Wars TR'24</a></li>
+                    <li><a href="index.html">Pi Wars TR'26</a></li>
                     <!-- 					<li><a href="#about">Yarışma Hakkında</a></li>
  -->
                     <li><a href="bizkimiz.html">Bİz Kİmİz?</a></li>
                     <li><a href="robotyapımı.html">Robot Yapımı</a></li>
-                    <li><a href="discord.html">Discord</a></li>
+                    <li><a href="whatsapp.html">WhatsApp</a></li>
 
-                    <ul class="dropdown">
-                        <li><a class="dropdown" class="main-nav nav navbar-nav navbar-right"> Geçmİş Seneler </a></li>
-                        <ul class="dropdown-content">
-                            <li> <a href="./PiWars2021/index.html">Pi Wars TR'21</a></li>
-                            <li> <a href="piwars20.html">Pi Wars TR'20</a></li>
-                            <li> <a href="piwars19.html">Pi Wars TR'19</a></li>
-                        </ul>
-                    </ul>
+
                     <li><a href="#contact">İletİşİm</a></li>
 
 
@@ -167,8 +162,8 @@
                     <!-- home content -->
                     <div class="col-md-8 col-md-offset-2">
                         <div class="home-content">
-                            <h1 style="font-size: 75px">Pi Wars Türkiye <br \>2023-2024</h1>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform?usp=sf_link" class="main-btn">Başvuru Formu</a>
+                            <h1 style="font-size: 75px">Pi Wars Türkiye <br \>2025-2026</h1>
+                            <a href="https://forms.gle/emd1wF8XfbZJ56vq9" class="main-btn">Başvuru Formu</a>
                         </div>
                     </div>
                     <!-- /home content -->
@@ -218,17 +213,22 @@
                     <p>Etkinlik için başvurular yakında açıklanacak.</p>
                     <br>
                     <h3 class="title"><span>Pi Wars TR</span> <span style="color: #dd0a37;">Yarışma</span></h3>
-                    <h3>10 Şubat</h3>
+                    <h3>18-19 Nisan</h3>
                 </div>
                 <!-- /section title -->
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <!-- about content -->
                     <div class="about-content">
-                        <p>Pi Wars son 9 senedir İngiltere Cambridge Üniversitesinde gerçekleşen bir robotik yarışmasıdır. Yarışmada takımlar Raspberry Pi tabanlı mobil robotlarını çeşitli otonom ve uzaktan kumandalı görevlerde yarıştırır, her görevi tamamlama
+                        <p>Pi Wars son 12 senedir İngiltere Cambridge Üniversitesinde gerçekleşen bir robotik
+                            yarışmasıdır. Yarışmada takımlar Raspberry Pi tabanlı mobil robotlarını çeşitli otonom ve
+                            uzaktan kumandalı görevlerde yarıştırır, her görevi tamamlama
                             hızına ve başarı oranına bakılarak puanlandırılırlar.
                             <br>
-                            <br> Bu sene dördüncüsü gerçekleşecek Pi Wars etkinliği ile ülkemizde takımlar arası rekabeti ortandan kaldıran, robotiğe yeni başlayanları teşvik eden, ve katılımcılardaki "maker" ruhunu canlandıran bir yarışma kültürü oluşturmayı
-                            hedefliyoruz. Bu sene, Pi Wars Türkiye etkinliğimiz yüz yüze ortamdan yapılacaktır. Detaylı bilgilere <a href="#challenges"><u> şartname </u></a> kısmından
+                            <br> Bu sene dördüncüsü gerçekleşecek Pi Wars etkinliği ile ülkemizde takımlar arası
+                            rekabeti ortandan kaldıran, robotiğe yeni başlayanları teşvik eden, ve katılımcılardaki
+                            "maker" ruhunu canlandıran bir yarışma kültürü oluşturmayı
+                            hedefliyoruz. Bu sene, Pi Wars Türkiye etkinliğimiz yüz yüze ortamdan yapılacaktır. Detaylı
+                            bilgilere <a href="#challenges"><u> şartname </u></a> kısmından
                             </b> ulaşabilirsiniz.
                         </p>
                         <!-- <p>Yarışmaya 24 takım seçilecektir.</p> -->
@@ -242,20 +242,29 @@
                 <br>
                 <div class="section-title">
                     <h3 class="title"><span>Pi Wars TR</span> <span style="color: #dd0a37;">Eğitim</span></h3>
-                    <h3>Kasım Ayı</h3>
+                    <h3>28 Şubat</h3>
                 </div>
                 <!-- /section title -->
 
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <!-- about content -->
                     <div class="about-content">
-                        <p>Türkiye'de robotiği daha erişilebilir kılma misyonumuzu sadece bir yarışmayla gerçekleştiremeyeceğimizin farkındayız. Bu sebeple, 4 senedir yarışma öncesi verilen Pi Wars TR Eğitimi'ni bu sene de devam ettiriyoruz!
+                        <p>Türkiye'de robotiği daha erişilebilir kılma misyonumuzu sadece bir yarışmayla
+                            gerçekleştiremeyeceğimizin farkındayız. Bu sebeple, 4 senedir yarışma öncesi verilen Pi Wars
+                            TR Eğitimi'ni bu sene de devam ettiriyoruz!
                             <br>
-                            <br> Yarışmaya katılan tüm takımlar, 1 Ocak'tan itibaren HisarCS tarafından hazırlanan "Sıfırdan Raspberry Pi Tabanlı Robot Yapımı: Pi Wars Türkiye" adlı online eğitim videoları ile yarışmaya hazırlanabilecekler. Bu videolarda
-                            Python, Raspberry Pi, 3D tasarım ve bilgisayar görüsü konularına değinilecek ve eğitimin sonunda her takım öğrendiklerini kullanarak kendi basit RasPi robotunu yapacak.<br>
-                            <br> Kasım ayı boyunca takımlar Pi Wars TR mentorlarıyla bir araya gelebilecek ve sorularını sorabilecekler. Takımlar yarışmaya kadar olan süreçte Discord kanalımızdan diğer takımlar ile iletişim halinde olup birbirlerine yardım
+                            <br> Yarışmaya katılan tüm takımlar, 1 Ocak'tan itibaren HisarCS tarafından hazırlanan
+                            "Sıfırdan Raspberry Pi Tabanlı Robot Yapımı: Pi Wars Türkiye" adlı online eğitim videoları
+                            ile yarışmaya hazırlanabilecekler. Bu videolarda
+                            Python, Raspberry Pi, 3D tasarım ve bilgisayar görüsü konularına değinilecek ve eğitimin
+                            sonunda her takım öğrendiklerini kullanarak kendi basit RasPi robotunu yapacak.<br>
+                            <br> Kasım ayı boyunca takımlar Pi Wars TR mentorlarıyla bir araya gelebilecek ve sorularını
+                            sorabilecekler. Takımlar yarışmaya kadar olan süreçte WhatsApp grubumuzdan diğer takımlar
+                            ile iletişim halinde olup birbirlerine yardım
                             edebilecekler. <br>
-                            <br> Seçilen 10 takıma kendi robotlarını geliştirebilmeleri için gerekli malzemeleri içeren robot kitleri sağlanacaktır. Diğer takımlar yakın zamanda açıklanacak olan malzeme listesini kullanarak gerekli parçaları satın alabilirler.
+                            <br> Seçilen 10 takıma kendi robotlarını geliştirebilmeleri için gerekli malzemeleri içeren
+                            robot kitleri sağlanacaktır. Diğer takımlar yakın zamanda açıklanacak olan malzeme listesini
+                            kullanarak gerekli parçaları satın alabilirler.
                         </p>
                     </div>
                     <!-- /about content -->
@@ -465,7 +474,7 @@
                                 <i class="fa fa-play"></i>
                             </a>
                             <h2 style="color: #000000"><mark style="background-color:#ffffff">2020 Yarışma
-									Videosu</mark></h2>
+                                    Videosu</mark></h2>
                             <!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
                         </div>
                     </div>
@@ -486,13 +495,16 @@
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h3 class="title" style="margin-bottom: 5px;"><span>Yarışma</span> <span style="color: #dd0a37;">Şartnamesi</span></h3>
+                    <h3 class="title" style="margin-bottom: 5px;"><span>Yarışma</span> <span
+                            style="color: #dd0a37;">Şartnamesi</span></h3>
                     <br>
-                    <a href="https://docs.google.com/document/d/1hsHqVAiVwvYBoUvGmPTJjqWT2iBiAOetJmHjBB0PY7Y/edit?usp=sharing" class="main-btn">Yarışma Şartnamesi</a>
+                    <a href="https://docs.google.com/document/d/1hsHqVAiVwvYBoUvGmPTJjqWT2iBiAOetJmHjBB0PY7Y/edit?usp=sharing"
+                        class="main-btn">Yarışma Şartnamesi</a>
 
                     <!--Ödüller-->
                     <div id="oduller" class="section">
-                        <h3 class="title" style="margin-bottom: 5px;">Ödüller<span></span> <span style="color: #dd0a37;"></span></h3>
+                        <h3 class="title" style="margin-bottom: 5px;">Ödüller<span></span> <span
+                                style="color: #dd0a37;"></span></h3>
                         <br>
                         <!-- 					<h1 style="color: #dd0a37;">1'incilik Ödülü</h1> -->
                         <h4>Ödüller en kısa zamanda açıklanacaktır.</h4>
@@ -710,7 +722,10 @@
                             <h3 class="title"><span>KVKK</span> <span style="color: #dd0a37;"></span></h3>
                         </div>
                         <!-- /section title -->
-                        <p style="text-align:center">Hisar Okulları'nın kişisel verilerin korunması hakkında bilgilendirme metinlerine <a href="KVKK.pdf" style="text-align:center">https://piwars.hisarcs.com/KVKK.pdf </a>linkinden ulaşabilirsiniz.
+                        <p style="text-align:center">Hisar Okulları'nın kişisel verilerin korunması hakkında
+                            bilgilendirme metinlerine <a href="KVKK.pdf"
+                                style="text-align:center">https://piwars.hisarcs.com/KVKK.pdf </a>linkinden
+                            ulaşabilirsiniz.
                         </p>
 
 
@@ -722,7 +737,8 @@
             <!-- Başvur -->
             <div id="cta" class="section">
                 <!-- background image -->
-                <div class="section-bg" style="background-image:url(./img/img10.JPG)" data-stellar-background-ratio="0.5"></div>
+                <div class="section-bg" style="background-image:url(./img/img10.JPG)"
+                    data-stellar-background-ratio="0.5"></div>
                 <!-- /background image -->
 
                 <!-- container -->
@@ -733,7 +749,8 @@
                         <div class="col-md-8 col-md-offset-2">
                             <div class="cta-content text-center">
                                 <h2>Şimdi Başvurun!</h2>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform?usp=sf_link" class="main-btn">Başvur</a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSejuoq2oj0mdUCvpDLaXDfGrTP4KwcV5ZDb56_pvGqOcEQY8g/viewform?usp=sf_link"
+                                    class="main-btn">Başvur</a>
 
                             </div>
                         </div>
@@ -786,7 +803,8 @@
                         <div class="col-sm-4">
                             <div class="contact">
                                 <h3>E-Posta</h3>
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hisarcs@gmail.com">hisarcs@hisarschool.k12.tr</a>
+                                <a
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=hisarcs@gmail.com">hisarcs@hisarschool.k12.tr</a>
                             </div>
                         </div>
                         <!-- /contact -->
